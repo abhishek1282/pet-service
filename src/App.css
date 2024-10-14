@@ -12,7 +12,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -27,7 +32,10 @@
 .App-link {
   color: #61dafb;
 }
-
+img{
+  width:300px;
+  height: 400px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
