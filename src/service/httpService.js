@@ -1,10 +1,21 @@
-//create axios get post put api method
+
 
 import axios from 'axios';
 
 const api = axios.create({
   baseURL: 'https://your-api-url.com',
 });
+// get api method
+
+async function getAllPets() {
+    const url='https://fakestoreapi.com/products'
+  try {
+    const response = await api.get(url);
+    return response.data;
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
 
 // GET request
 
@@ -51,4 +62,8 @@ async function deletePet(id) {
 }
 
 // Example usage
+// create export for all methods
+
+export { getAllPets, getPetById, createPet, updatePet, deletePet };
+
 
